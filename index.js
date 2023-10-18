@@ -12,8 +12,8 @@ const server = express()
 server.use(cors())
 server.use(express.json({limit:'50mb'}))
 
-server.use('/api/v1/post',postRoutes)
-server.use('/api/v1/dalle',dalleRoutes)
+server.use('/collection',postRoutes)
+server.use('/dalle',dalleRoutes)
 
 
 // server.use(router)
